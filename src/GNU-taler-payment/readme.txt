@@ -50,10 +50,10 @@ For the plugin to work perfectly you need to have the Woocommerce plugin install
 
 == Changelog ==
 
-= 1.0 =
+= 0.6.0 =
 * First Public Release
 
 == Upgrade Notice ==
 
-= 1.0 =
+= 0.6.0 =
 
