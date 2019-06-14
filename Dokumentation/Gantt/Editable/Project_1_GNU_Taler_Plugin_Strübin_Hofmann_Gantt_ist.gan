@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2019-02-18" view-index="0" gantt-divider-location="598" resource-divider-location="300" version="2.8.10" locale="de_CH">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Vorgang" width="281" order="0"/>
+        <field id="tpd4" name="Anfang" width="157" order="1"/>
+        <field id="tpd5" name="Ende" width="156" order="2"/>
+        <option id="color.recent">
+            <![CDATA[#ffff66 #ff6600 #0000ff #f4f4f4 #ff0000 #00cc00]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Ressource" width="210" order="0"/>
+        <field id="1" name="Rolle" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="MS 0 Projektstart" color="#8cb6ce" meeting="true" start="2019-02-19" duration="0" complete="0" thirdDate="2019-06-12" thirdDate-constraint="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" name="Planung and Research" color="#8cb6ce" meeting="false" start="2019-02-19" duration="14" complete="0" thirdDate="2019-06-12" thirdDate-constraint="0" expand="true">
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" name="MS 1 Planung abgeschlossen" color="#8cb6ce" meeting="true" start="2019-03-11" duration="0" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+            <depend id="144" type="2" difference="0" hardness="Strong"/>
+            <depend id="149" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="144" name="Webshop" color="#00cc00" meeting="false" start="2019-03-11" duration="15" complete="0" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true">
+            <task id="145" name="AP08 Webserver erstellen" color="#00cc00" meeting="false" start="2019-03-11" duration="5" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <depend id="47" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="146" name="AP09 Woocommerce Frontend erstellen" color="#00cc00" meeting="false" start="2019-03-11" duration="5" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <depend id="47" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="147" name="AP10 Woocommerce Backend erstellen" color="#00cc00" meeting="false" start="2019-03-11" duration="5" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <depend id="47" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="27" name="AP12 Andere Bezahloptionen" color="#00cc00" meeting="false" start="2019-03-18" duration="5" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <depend id="47" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="28" name="AP13 Produkte erstellen" color="#00cc00" meeting="false" start="2019-03-18" duration="5" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <depend id="47" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="47" name="MS 2 Webshop done" color="#00cc00" meeting="true" start="2019-04-01" duration="0" complete="0" thirdDate="2019-04-01" thirdDate-constraint="1" expand="true">
+                <depend id="26" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="149" name="Plugin" color="#0000ff" meeting="false" start="2019-03-18" duration="65" complete="0" thirdDate="2019-03-18" thirdDate-constraint="0" expand="true">
+            <task id="26" name="AP11 Plugin auf Webshop installieren" color="#0000ff" meeting="false" start="2019-05-27" duration="2" complete="0" thirdDate="2019-05-27" thirdDate-constraint="1" expand="true"/>
+            <task id="23" name="AP07 Test: Backoffice" color="#0000ff" meeting="false" start="2019-03-18" duration="5" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true"/>
+            <task id="17" name="AP01 Plugin Grundlage" color="#0000ff" meeting="false" start="2019-03-25" duration="5" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true"/>
+            <task id="21" name="AP05 Json Formatierung" color="#0000ff" meeting="false" start="2019-03-25" duration="30" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <depend id="48" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="18" name="AP02 Kommunikation mit Taler Backend" color="#0000ff" meeting="false" start="2019-04-01" duration="30" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <depend id="48" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="29" name="AP14 Plugin in Woocommerce integrieren" color="#0000ff" meeting="false" start="2019-04-08" duration="15" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <depend id="48" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="30" name="AP15 Taler in den Bezahlmöglichkeiten" color="#0000ff" meeting="false" start="2019-04-15" duration="5" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <depend id="48" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="35" name="AP20 Eigenes Taler backend aufsetzen" color="#ff0000" meeting="false" start="2019-04-15" duration="20" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true"/>
+            <task id="31" name="AP16 Test: Wallet erkennung" color="#0000ff" meeting="false" start="2019-05-27" duration="5" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <depend id="48" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="33" name="AP18 Taler Backend Auswahl optionen" color="#0000ff" meeting="false" start="2019-05-13" duration="10" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <depend id="48" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="19" name="AP03 Kommunikation mit WooCommerce" color="#0000ff" meeting="false" start="2019-04-29" duration="5" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <depend id="48" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="20" name="AP04 Kommunikation mit Wallet" color="#0000ff" meeting="false" start="2019-04-29" duration="5" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <depend id="48" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="22" name="AP06 Rückmeldung Merchant" color="#0000ff" meeting="false" start="2019-04-29" duration="10" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <depend id="48" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="48" name="MS 3 Plugin done" color="#0000ff" meeting="true" start="2019-06-03" duration="0" complete="0" thirdDate="2019-06-03" thirdDate-constraint="1" expand="true">
+                <depend id="101" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="41" name="AP26 Junit Tests erstellen" color="#0000ff" meeting="false" start="2019-06-03" duration="10" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true"/>
+            <task id="34" name="AP19 Wordpress konform" color="#0000ff" meeting="false" start="2019-05-27" duration="5" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <depend id="101" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="38" name="AP23 ReadMe.txt schreiben" color="#0000ff" meeting="false" start="2019-05-20" duration="5" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <depend id="101" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="32" name="AP17 Test: Customer Rückerstattung" color="#0000ff" meeting="false" start="2019-05-13" duration="5" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <depend id="101" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="40" name="AP25 Rückerstattung implementieren" color="#0000ff" meeting="false" start="2019-05-13" duration="10" complete="0" thirdDate="2019-05-13" thirdDate-constraint="1" expand="true">
+                <depend id="101" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="101" name="MS 4 Abgabe Code" color="#0000ff" meeting="true" start="2019-06-03" duration="0" complete="0" thirdDate="2019-06-03" thirdDate-constraint="1" expand="true"/>
+            <task id="46" name="AP31 Log Files for Plugin" color="#0000ff" meeting="false" start="2019-05-29" duration="3" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <depend id="101" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="151" name="Dokumentation" color="#ff6600" meeting="false" start="2019-05-20" duration="20" complete="0" thirdDate="2019-05-20" thirdDate-constraint="0" expand="true">
+            <task id="36" name="AP21 Doku für project management" color="#ff6600" meeting="false" start="2019-05-20" duration="10" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true"/>
+            <task id="37" name="AP22 Doku für project One" color="#ff6600" meeting="false" start="2019-05-20" duration="20" complete="0" thirdDate="2019-05-20" thirdDate-constraint="1" expand="true"/>
+            <task id="39" name="AP24 Gantt Diagramm erstellen" color="#ff6600" meeting="false" start="2019-06-03" duration="10" complete="0" thirdDate="2019-06-03" thirdDate-constraint="1" expand="true"/>
+            <task id="42" name="AP27 Technische doku" color="#ff6600" meeting="false" start="2019-06-03" duration="10" complete="0" thirdDate="2019-06-03" thirdDate-constraint="1" expand="true"/>
+            <task id="44" name="AP29 Arbeitsjournal fertigstellen" color="#ff6600" meeting="false" start="2019-06-03" duration="10" complete="0" thirdDate="2019-06-03" thirdDate-constraint="1" expand="true"/>
+            <task id="45" name="AP30 Arbeitspakete fertigstellen" color="#ff6600" meeting="false" start="2019-06-03" duration="10" complete="0" thirdDate="2019-06-03" thirdDate-constraint="1" expand="true"/>
+            <task id="106" name="MS 6 Abgabe Doku" color="#ff6600" meeting="true" start="2019-06-14" duration="0" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="152" name="Präsentation" color="#000000" meeting="false" start="2019-05-27" duration="6" complete="0" thirdDate="2019-05-27" thirdDate-constraint="0" expand="true">
+            <task id="43" name="AP28 Präsentation vorbereiten" color="#ffff66" meeting="false" start="2019-05-27" duration="6" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true"/>
+            <task id="103" name="MS 5 Präsentation" color="#ffff66" meeting="true" start="2019-06-04" duration="0" complete="0" thirdDate="2019-06-04" thirdDate-constraint="1" expand="true"/>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
